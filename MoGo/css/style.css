@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;600;700;800&family=Roboto&display=swap');
 
 * {
     box-sizing: border-box;
@@ -149,4 +149,77 @@ a {
 .slide__item {
     width: 20%;
     border-top: 2px solid white;
+}
+
+/******************/
+
+.sup__text {
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    color: #333333;
+    margin: 0;
+}
+
+.heading__site {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333333;
+    margin: 0;
+    margin-bottom: 94px;
+}
+
+.heading__site::after {
+    content: '';
+    position: relative;
+    top: 45px;
+    display: block;
+    width: 60px;
+    height: 5px;
+    background-color: red;
+    margin: 0 auto;
+}
+
+
+.sub__text {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #999999;
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+
+.color__white {
+    /* background-color: #f7f3f3; */
+}
+
+/******************/
+
+
+
+
+/* ABOUT */
+
+.about {
+    padding-top: 95px;
+}
+
+
+.text__center {
+    text-align: center;
+}
+
+.about__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.about__item:not(:last-child) {
+    padding-right: 25px;
+}
+
+.about__card {
+    margin-bottom: 100px;
 }
