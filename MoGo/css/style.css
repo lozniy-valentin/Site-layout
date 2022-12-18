@@ -2,6 +2,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -38,7 +40,6 @@ a {
     background-size: cover;
     position: center center;
 }
-
 
 .header__menu {
     padding-top: 28px;
@@ -141,14 +142,26 @@ a {
 }
 
 .slide__text {
+    padding: 30px 0;
     text-transform: uppercase;
     color: white;
     font-size: 14px;
 }
 
 .slide__item {
+    position: relative;
     width: 20%;
     border-top: 2px solid white;
+    transition: color 0.5s linear;
+}
+
+.slide__item:hover::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    width: 50px;
+    height: 2px;
+    background-color: red;
 }
 
 /******************/
@@ -196,9 +209,6 @@ a {
 
 /******************/
 
-
-
-
 /* ABOUT */
 
 .about {
@@ -216,10 +226,127 @@ a {
     margin-top: 100px;
 }
 
+.about__item:hover::before {
+    content: '';
+    box-shadow: 6px 6px #5dc5b2;
+    position: absolute;
+    width: 380px;
+    height: 250px;
+    background-color: orangered;
+    opacity: 0.7;
+}
+
 .about__item:not(:last-child) {
     padding-right: 25px;
 }
 
 .about__card {
     margin-bottom: 100px;
+}
+
+/***********************/
+/*info*/
+
+.info {
+    width: 100%;
+    height: 267px;
+    background-color: #95e1d3;
+}
+
+.info__item {
+    text-align: center;
+}
+
+
+.info__list {
+    padding-top: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.number {
+    color: white;
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.number__subtitle {
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/***************/
+/*services*/
+
+.services {
+    margin-top: 100px;
+}
+
+.services__card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+.services__item {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+}
+
+.services__item {
+    background-position: top left;
+    background-repeat: no-repeat;
+    padding: 0 0 0 60px;
+    margin-bottom: 50px;
+}
+
+.services__title {
+    padding-bottom: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sirvices__text {
+    color: gray;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.8;
+}
+
+/***************/
+/*design*/
+
+.design {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 850px;
+    padding-bottom: 0;
+}
+
+.design__title {
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+.design__images {
+    width: 100%;
+    max-width: 650px;
+    position: relative;
+    bottom: 30px;
+    margin: 0 auto;
+}
+
+.design__item {
+    display: block;
+}
+
+.design__white {
+    position: absolute;
+    right: -50px;
+    bottom: -80px;
 }
