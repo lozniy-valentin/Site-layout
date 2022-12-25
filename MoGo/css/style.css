@@ -350,3 +350,171 @@ a {
     right: -50px;
     bottom: -80px;
 }
+
+
+/************************/
+/*service__we--do*/
+
+.service__we--do {
+    margin-top: 80px;
+}
+
+.text__we--do{
+    margin-bottom: 80px;
+}
+
+.wedo {
+    display: flex;
+}
+
+.wedo__item {
+    width: 50%;
+}
+
+.accordion__item {
+    border: 1px solid #e5e5e5;
+    margin-bottom: 17px;
+}
+
+.accordion__item.active
+.accordion__content {
+    display: block;
+}
+
+.accordion__item.active
+.accordion__header {
+    border-bottom-color: #e5e5e5;
+}
+
+.accordion__item.active
+.accordion__header::after {
+    transform: translateY(-50%) 
+    rotate(-45deg);
+}
+
+.accordion__header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion__header::after {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    
+    border-top: 2px solid #999;
+    border-right: 2px solid #999;
+    
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 1;
+    transform: translateY(-50%) 
+    rotate(135deg);
+}
+
+.accordion__content {
+    display: none;
+    padding: 15px 20px;
+    font-size: 15px;
+    font-style: italic;
+    color: #999999;
+} 
+
+.accordion__icon {
+    padding: 18px;
+}
+
+.accordion__title {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600; 
+}
+
+/**********************/
+/* content__slider */
+
+.section__slider {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    background-color: #f8f8f8;
+    height: 290px;
+    width: 100%;
+}
+
+.section__wrapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content__text {
+    margin-left: 50px;
+    max-width: 780px;
+    width: 100%;
+    position: relative;
+}
+
+.section__wrapp {
+    position: relative;
+}
+
+.section__wrapp::after {
+    cursor: pointer;
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    
+    border-top: 2px solid #999;
+    border-right: 2px solid #999;
+    
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 1;
+    transform: translateY(-50%) 
+    rotate(45deg);
+}
+
+.section__wrapp::before {
+    cursor: pointer;
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    
+    border-top: 2px solid #999;
+    border-right: 2px solid #999;
+    
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    z-index: 1;
+    transform: translateY(-50%) 
+    rotate(225deg);
+}
+
+.content__text::after{
+    display: block;
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 80px;
+}
+
+.content__text--name {
+    font-family: 'Kaushan Script', cursive;
+    position: absolute;
+    left: 70px;
+    top: 73px
+}
